@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		int n;
+		int year, day;
+		
+		System.out.println("Enter no. of minutes here :");
+		Scanner sc = new Scanner(System.in);
+		
+		n = sc.nextInt();
+		
+		year=n/60/24/365;
+		day=n/60/24%365;
+		
+		System.out.println("we converted these minutes into :\n"+ year +" YEARS " + day +" DAYS.");
+	}
+}
