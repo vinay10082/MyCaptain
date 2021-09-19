@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Employee {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter number of Employee");
+		int n = sc.nextInt();
+		
+		String [] name = new String[n];
+		String [] adrs = new String[n];
+		
+		int [] yOj= new int[n];
+			
+		for(int i=0; i<n;i++){
+			
+			System.out.println("Enter employee "+ (i+1) +" Name");
+			
+			name[i]= sc.next();
+		
+		}
+		
+				for(int i=0; i<n;i++){
+			
+			System.out.println("Enter employee "+(i+1)+" Year of Joining");
+			
+			yOj [i]= sc.nextInt();
+		}
+		
+				for(int i=0; i<n;i++){
+			
+			System.out.println("Enter employee "+(i+1)+" Address");
+			
+			adrs [i]= sc.next();
+		}
+		
+		System.out.println("NAME\t"+"Year Of Joining"+"\tAddress");
+		
+		System.out.println();
+	
+		for(int j=0; j<n; j++){
+			System.out.println(name[j]+"\t"+yOj[j]+"\t\t"+adrs[j]+"\n");
+		}
+	}
+}
